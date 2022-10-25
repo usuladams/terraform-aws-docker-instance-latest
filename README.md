@@ -12,8 +12,9 @@ provider "aws" {
   region = "us-east-1"
 }
 
-module "docker_instance" {
-    source = "<github-username>/docker-instance/aws"
-    key_name = "clarusway"
+module "docker-instance-latest" {
+  source  = "usuladams/docker-instance-latest/aws"
+  version = "0.0.1"
+  key_name = "firstkey"
 }
 ```
